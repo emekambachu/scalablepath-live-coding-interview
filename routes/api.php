@@ -36,3 +36,6 @@ Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, '
     ->name('user.register');
 Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login'])
     ->name('user.login');
+
+Route::get('/products', [App\Http\Controllers\ProductController::class, 'getProducts']);
+Route::get('/product/{id}/delete', [App\Http\Controllers\ProductController::class, 'deleteProduct']);

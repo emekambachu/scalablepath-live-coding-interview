@@ -29,6 +29,7 @@ window.Swal = Swal;
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import Products from './components/Products';
 
 import HomePosts from './components/HomePosts';
 import PostDetail from './components/PostDetail';
@@ -47,6 +48,8 @@ import BlogPosts from './components/BlogPosts';
 
 const app = createApp({
     components: {
+        Products,
+
         HomePosts,
         PostDetail,
 
